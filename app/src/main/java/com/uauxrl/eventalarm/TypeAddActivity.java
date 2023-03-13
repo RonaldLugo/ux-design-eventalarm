@@ -14,7 +14,7 @@ public class TypeAddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_type_add);
 
-        button = (Button) findViewById(R.id.place_add_cancel_button);
+        button = (Button) findViewById(R.id.type_add_cancel_button);
         button.setOnClickListener(view -> openActivityMenu());
     }
 

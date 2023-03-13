@@ -12,11 +12,28 @@
         android:theme="@style/Theme.EventAlarm"
         tools:targetApi="31">
         <activity
-            android:name=".TypeAddActivity"
+            android:name=".ClockAlarmActivity"
             android:exported="false" />
         <activity
+            android:name=".TimeZoneActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ToneActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".RepeatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".TypeAddActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".PlaceAddActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".ClockAddActivity"
             android:exported="false"

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="5pt"
+    android:paddingEnd="5pt"
+    tools:context=".RepeatActivity">
+
+    <ImageView
+        android:id="@+id/BackgroundMenuClock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/background_home_desc"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_main" />
+
+    <Button
+        android:id="@+id/repeat_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_inactive"
+        android:paddingHorizontal="30dp"
+        android:text="@string/back"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_8E8E93"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repeat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/repeat_title"
+        android:textColor="@color/blue_00003D"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repeat_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repeat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/open_sans"
+        android:lineHeight="18sp"
+        android:paddingRight="10pt"
+        android:text="@string/repeat_label"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue_014BA0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_title" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_label">
+
+        <Switch
+            android:id="@+id/repeat_sw_sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_sunday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/gray_636366" />
+
+        <Switch
+            android:id="@+id/repeat_sw_monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_monday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/green_30D158" />
+
+        <Switch
+            android:id="@+id/repeat_sw_tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_tuesday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/green_30D158" />
+
+        <Switch
+            android:id="@+id/repeat_sw_wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_wednesday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/green_30D158" />
+
+        <Switch
+            android:id="@+id/repeat_sw_thursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_thursday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/green_30D158" />
+
+        <Switch
+            android:id="@+id/repeat_sw_friday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_friday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/green_30D158" />
+
+        <Switch
+            android:id="@+id/repeat_sw_saturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:text="@string/repeat_week_saturday"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp"
+            android:thumbTint="@color/gray_F2F2F7"
+            android:trackTint="@color/gray_636366" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

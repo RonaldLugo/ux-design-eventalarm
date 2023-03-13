@@ -149,7 +149,7 @@
                 android:src="@drawable/button_add" />
         </LinearLayout>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/fr_type_add"
             android:layout_width="99dp"
             android:layout_height="108dp"
