@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/BackgroundHome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/background_home_desc"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/background_home" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ContentWelcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/BackgroundHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/BackgroundHome">
+
+            <ImageView
+                android:id="@+id/EventAlarmIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/event_alarm_icon_desc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/event_alarm" />
+
+            <LinearLayout
+                android:id="@+id/Info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border_home_content"
+                android:contentDescription="@string/home_welcome_info"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/ContentWelcome"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/ContentWelcome"
+                app:layout_constraintTop_toBottomOf="@+id/EventAlarmIcon"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/home_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="@string/home_welcome"
+                    android:fontFamily="@font/open_sans"
+                    android:lineHeight="17sp"
+                    android:text="@string/home_welcome"
+                    android:textColor="@color/gray_1C1C1E"
+                    android:textSize="13sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/info_clock_image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/home_welcome_category_clock"
+                            app:srcCompat="@drawable/category_clock" />
+
+                        <LinearLayout
+                            android:id="@+id/info_clock_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/info_clock_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="20sp"
+                                android:text="@string/home_welcome_clock_title"
+                                android:textColor="@color/blue_00003D"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/info_clock_example"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="16sp"
+                                android:text="@string/home_welcome_clock_example"
+                                android:textColor="@color/blue_00276C"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/info_clock_require"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="13sp"
+                                android:text="@string/home_welcome_clock_require"
+                                android:textColor="@color/blue_5B7DCF"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/info_place_image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/home_welcome_category_place"
+                            app:srcCompat="@drawable/category_place" />
+
+                        <LinearLayout
+                            android:id="@+id/info_place_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/info_place_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="20sp"
+                                android:text="@string/home_welcome_place_title"
+                                android:textColor="@color/blue_00003D"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/info_place_example"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="16sp"
+                                android:text="@string/home_welcome_place_example"
+                                android:textColor="@color/blue_00276C"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/info_place_example2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="16sp"
+                                android:text="@string/home_welcome_place_example2"
+                                android:textColor="@color/blue_00276C"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/info_place_require"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="13sp"
+                                android:text="@string/home_welcome_place_require"
+                                android:textColor="@color/blue_5B7DCF"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/info_place_type2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/home_welcome_category_type"
+                            app:srcCompat="@drawable/category_type" />
+
+                        <LinearLayout
+                            android:id="@+id/info_type_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/info_type_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="20sp"
+                                android:text="@string/home_welcome_type_title"
+                                android:textColor="@color/blue_00003D"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/info_type_example"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="16sp"
+                                android:text="@string/home_welcome_type_example"
+                                android:textColor="@color/blue_00276C"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/info_type_example2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="16sp"
+                                android:text="@string/home_welcome_type_example2"
+                                android:textColor="@color/blue_00276C"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/info_type_require"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:lineHeight="13sp"
+                                android:text="@string/home_welcome_type_require"
+                                android:textColor="@color/blue_5B7DCF"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/not_show_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:lineHeight="13sp"
+                android:minHeight="48dp"
+                android:text="@string/home_welcome_not_show_more"
+                android:textColor="@color/gray_636366"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Info" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BackgroundHome"
+            app:layout_constraintEnd_toEndOf="@+id/BackgroundHome"
+            app:layout_constraintStart_toStartOf="@+id/BackgroundHome"
+            app:layout_constraintTop_toBottomOf="@+id/ContentWelcome">
+
+            <TextView
+                android:id="@+id/register_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:lineHeight="17sp"
+                android:text="@string/register_email"
+                android:textColor="@color/gray_2C2C2E"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/register_container_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Register" />
+
+            <LinearLayout
+                android:id="@+id/register_container_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/register_code_desc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_email">
+
+                <EditText
+                    android:id="@+id/register_email_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_home_content"
+                    android:ems="10"
+                    android:hint="@string/register_email_field"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/register_email_send_desc"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/button_send"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register_code_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:lineHeight="17sp"
+                android:text="@string/register_code_desc"
+                android:textColor="@color/gray_2C2C2E"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/register_container_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_container_email" />
+
+            <LinearLayout
+                android:id="@+id/register_container_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/register_code_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_code_desc">
+
+                <TextView
+                    android:id="@+id/register_code_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:lineHeight="18sp"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/register_code_label"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/gray_1C1C1E"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_home_content"
+                    android:ems="10"
+                    android:hint="@string/register_code_placeholder"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_active"
+                android:paddingHorizontal="30dp"
+                android:text="@string/register_code_button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/Register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_container_code" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

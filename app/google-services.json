@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727502940934",
+    "project_id": "ux-mobile-e15b4",
+    "storage_bucket": "ux-mobile-e15b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727502940934:android:3e5bd9feaee5ac24940c87",
+        "android_client_info": {
+          "package_name": "com.uauxrl.eventalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727502940934-4di6rt7vj95ibedv7je8cs7mui09pnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_5-M5JTC_emyJ9poY1Z9Ru70TAwEoKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727502940934-4di6rt7vj95ibedv7je8cs7mui09pnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryPlaceFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fr_place_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/event_alarm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fr_place_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/fragment_place_title"
+            android:textColor="@color/blue_00003D"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr_place_logo" />
+
+        <TextView
+            android:id="@+id/fr_place_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="15pt"
+            android:paddingEnd="15pt"
+            android:text="@string/fragment_place_desc"
+            android:textColor="@color/blue_00276C"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr_place_title" />
+
+        <TableLayout
+            android:id="@+id/fr_place_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr_place_desc">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fr_place_detail_fromto"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="10pt"
+                    android:text="@string/fragment_place_detail_fromto"
+                    android:textColor="@color/blue_00276C"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fr_place_detail_fromto_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="10pt"
+                    android:text="@string/fragment_place_detail_fromto_desc"
+                    android:textColor="@color/blue_00276C"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fr_place_detail_dist"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="10pt"
+                    android:text="@string/fragment_place_detail_dist"
+                    android:textColor="@color/blue_00276C"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fr_place_detail_dist_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="10pt"
+                    android:text="@string/fragment_place_detail_dist_desc"
+                    android:textColor="@color/blue_00276C"
+                    android:textSize="15sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_home_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr_place_detail">
+
+            <TextView
+                android:id="@+id/fr_place_inst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:paddingStart="10pt"
+                android:paddingTop="10pt"
+                android:paddingRight="10pt"
+                android:paddingBottom="10pt"
+                android:text="@string/fragment_place_inst"
+                android:textColor="@color/blue_014BA0"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/fr_clock_place_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/button_add" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/fr_place_add"
+            android:layout_width="99dp"
+            android:layout_height="108dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/button_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@null"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
