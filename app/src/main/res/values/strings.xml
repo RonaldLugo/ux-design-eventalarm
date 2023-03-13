@@ -31,7 +31,10 @@
     <string name="menu_type">Tipo</string>
     <string name="cancel">Cancelar</string>
     <string name="save">Guardar</string>
+    <string name="next">Siguiente</string>
     <string name="back">Atrás</string>
+    <string name="delay">Posponer</string>
+    <string name="stop">Detener</string>
     <string name="fragment_clock_title">Hora</string>
     <string name="fragment_clock_desc">Usa esta opción cuando conozcas la hora exacta en la que quieres tu alarma</string>
     <string name="fragment_clock_inst">Configura tu primera alarma haciendo clic en la opción </string>
@@ -79,4 +82,9 @@ Podrás personalizar aspectos como:</string>
     <string name="timezone_title">Ajustar Zona Horaria</string>
     <string name="timezone_desc">Tus alarmas se ajustarán a tu estilo de vida. \n\n Al activar el ajuste de zona horaria:</string>
     <string name="timezone_expl">La alarma se ajustará a la zona horaria donde te encuentres, es decir, se ejecutará en el país donde te encuentres, incluso sin tener que ajustar la zona horaria en la configuración de tu celular</string>
+    <string name="clock_alarm_title">05:30</string>
+    <string name="clock_alarm_notification">Despertador 1</string>
+    <string name="place_map_title">Lugar</string>
+    <string name="place_map_label">Selecciona un lugar</string>
+    <string name="place_map_desc">Selecciona el lugar que deseas referenciar, manteniendo presionada su ubicación en el mapa, luego selecciona el botón siguiente</string>
 </resources>

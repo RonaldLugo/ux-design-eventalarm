@@ -66,7 +66,7 @@ public class CategoryPlaceFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(), PlaceAddActivity.class);
+                Intent intent = new Intent(getActivity(), PlaceMapActivity.class);
                 startActivity(intent);
             }
         });

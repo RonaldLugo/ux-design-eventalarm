@@ -12,8 +12,13 @@
         android:theme="@style/Theme.EventAlarm"
         tools:targetApi="31">
         <activity
+            android:name=".PlaceMapActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".ClockAlarmActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".TimeZoneActivity"
             android:exported="false"

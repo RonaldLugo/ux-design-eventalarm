@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -70,6 +71,16 @@ public class ClockListFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        TextView time = (TextView) view.findViewById(R.id.fr_clock_item_time);
+        time.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ClockAlarmActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }

@@ -7,20 +7,19 @@ import android.widget.Button;
 
 public class PlaceAddActivity extends AppCompatActivity {
 
-    private Button button;
+    private Button buttonCancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_add);
 
-        button = (Button) findViewById(R.id.place_add_cancel_button);
-        button.setOnClickListener(view -> openActivityMenu());
+        buttonCancel = (Button) findViewById(R.id.place_add_cancel_button);
+        buttonCancel.setOnClickListener(view -> openActivityMenu());
     }
 
     public void openActivityMenu() {
-        Intent intent = new Intent(this, CategoryMenuActivity.class);
-        intent.putExtra("category","place");
+        Intent intent = new Intent(this, PlaceMapActivity.class);
         startActivity(intent);
     }
 }
