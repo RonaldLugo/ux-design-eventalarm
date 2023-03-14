@@ -63,7 +63,7 @@ Podrás personalizar aspectos como:</string>
     <string name="clock_add_tone">Tono: </string>
     <string name="clock_add_tone_placeholder">seleccione un valor</string>
     <string name="place_add_title">Lugar</string>
-    <string name="type_add_title">Tipo de lugar</string>
+    <string name="type_add_title">Tipo</string>
     <string name="clock_list_item_time">05:30</string>
     <string name="clock_list_item_desc">Despertador 1, entre semana</string>
     <string name="repeat_title">Periodicidad</string>
@@ -79,6 +79,7 @@ Podrás personalizar aspectos como:</string>
     <string name="tone_label">Selecciona el tono de la alarma</string>
     <string name="tone_search_label">Buscar: </string>
     <string name="tone_search_label_placeholder">buscar tono</string>
+    <string name="tone_search_items">Acorde\nBanbuco\nCosmos\n........\n........</string>
     <string name="timezone_title">Ajustar Zona Horaria</string>
     <string name="timezone_desc">Tus alarmas se ajustarán a tu estilo de vida. \n\n Al activar el ajuste de zona horaria:</string>
     <string name="timezone_expl">La alarma se ajustará a la zona horaria donde te encuentres, es decir, se ejecutará en el país donde te encuentres, incluso sin tener que ajustar la zona horaria en la configuración de tu celular</string>
@@ -105,5 +106,35 @@ Podrás personalizar aspectos como:</string>
     <string name="fr_place_list_desc">Usa esta opción cuando conozcas el lugar donde deseas que se active tu alarma</string>
     <string name="place_list_item_text">Reclamar fotos</string>
     <string name="place_list_item_desc">Impresiones y cia, Fin de semana</string>
-
+    <string name="type_add_category">Tipo de lugar: </string>
+    <string name="type_add_category_value">Droguería</string>
+    <string name="type_add_label">Etiqueta: </string>
+    <string name="type_add_label_typeholder">nombre de alarma</string>
+    <string name="type_add_from">Recordar desde: </string>
+    <string name="type_add_from_typeholder">16:52</string>
+    <string name="type_add_to">Recordar hasta: </string>
+    <string name="type_add_to_typeholder">00:00</string>
+    <string name="type_add_dist">Distancia de proximidad (mts)</string>
+    <string name="type_add_dist_typeholder">distancia en metros</string>
+    <string name="type_add_loop">Periodicidad: </string>
+    <string name="type_add_loop_typeholder">seleccione</string>
+    <string name="type_add_tone">Tono: </string>
+    <string name="clock_add_tone_typeholder">seleccione un valor</string>
+    <string name="type_find_title">Tipo de lugar</string>
+    <string name="type_find_label">Selecciona el tipo de lugar que necesitas configurar en tu alarma</string>
+    <string name="type_find_search_label">Buscar: </string>
+    <string name="type_find_search_label_placeholder">buscar tipo</string>
+    <string name="type_find_search_items">Droguería\nPapelería\nSupermercado\nBoutique\n..........</string>
+    <string name="fr_type_list_title">Tipo de lugar</string>
+    <string name="fr_type_list_desc">Usa esta opción cuando no necesites un lugar conocido o específico para que se active tu alarma</string>
+    <string name="type_list_item_text">Comprar medicamentos</string>
+    <string name="type_list_item_desc">Droguería, Lunes, Martes, Jueves</string>
+    <string name="place_alarm_title">Reclamar fotos</string>
+    <string name="place_alarm_desc">Impresiones y Cia</string>
+    <string name="place_alarm_notification">Hora actual: 17:25</string>
+    <string name="place_alarm_notification2">&gt;&gt; Estás a 80 mts &lt;&lt;</string>
+    <string name="type_alarm_title">Comprar medicamentos</string>
+    <string name="type_alarm_desc">Droguería</string>
+    <string name="type_alarm_notification">Hora actual: 17:25</string>
+    <string name="type_alarm_notification2">&gt;&gt; Estás a 80 mts &lt;&lt;</string>
 </resources>

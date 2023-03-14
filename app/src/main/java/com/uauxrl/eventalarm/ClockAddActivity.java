@@ -25,7 +25,7 @@ public class ClockAddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_clock_add);
 
         buttonCancel = (Button) findViewById(R.id.clock_add_cancel_button);
-        buttonCancel.setOnClickListener(view -> openActivityMenu("clock"));
+        buttonCancel.setOnClickListener(view -> finish());
 
         buttonSave = (Button) findViewById(R.id.clock_add_save_button);
         buttonSave.setOnClickListener(view -> openActivityMenu("clock_list"));

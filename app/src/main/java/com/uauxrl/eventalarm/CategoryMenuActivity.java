@@ -23,9 +23,9 @@ public class CategoryMenuActivity extends AppCompatActivity {
     CategoryClockFragment clockFragment = new CategoryClockFragment();
     ClockListFragment clockListFragment = new ClockListFragment();
     CategoryPlaceFragment placeFragment = new CategoryPlaceFragment();
-
     PlaceListFragment placeListFragment = new PlaceListFragment();
     CategoryTypeFragment typeFragment = new CategoryTypeFragment();
+    TypeListFragment typeListFragment = new TypeListFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,8 @@ public class CategoryMenuActivity extends AppCompatActivity {
         buttonType.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentMenu, typeFragment).commit();
+                Fragment fragment = (categoryMap.containsKey("type") && categoryMap.get("type").equals("list") ? typeListFragment : typeFragment);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentMenu, fragment).commit();
                 menuTypeLayout.setBackground(getResources().getDrawable(R.drawable.background_menu_item));
                 menuClockLayout.setBackgroundResource(0);
                 menuPlaceLayout.setBackgroundResource(0);
@@ -87,7 +88,12 @@ public class CategoryMenuActivity extends AppCompatActivity {
                 categoryMap.put("place", "empty");
                 buttonPlace.callOnClick();
                 break;
+            case "type_list":
+                categoryMap.put("type", "list");
+                buttonType.callOnClick();
+                break;
             case "type":
+                categoryMap.put("type", "empty");
                 buttonType.callOnClick();
                 break;
             case "clock_list":

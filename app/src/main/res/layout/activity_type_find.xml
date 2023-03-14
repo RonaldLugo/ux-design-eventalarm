@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:paddingStart="5pt"
     android:paddingEnd="5pt"
-    tools:context=".ToneActivity">
+    tools:context=".TypeFindActivity">
 
     <ImageView
         android:id="@+id/BackgroundMenuClock"
@@ -26,7 +26,7 @@
         app:srcCompat="@drawable/background_main" />
 
     <Button
-        android:id="@+id/repeat_back"
+        android:id="@+id/type_find_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -42,21 +42,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/repeat_title"
+        android:id="@+id/type_find_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/open_sans"
-        android:text="@string/tone_title"
+        android:text="@string/type_find_title"
         android:textColor="@color/blue_00003D"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/repeat_back"
+        app:layout_constraintStart_toStartOf="@+id/type_find_back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/repeat_label"
+        android:id="@+id/type_find_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -64,13 +64,13 @@
         android:fontFamily="@font/open_sans"
         android:lineHeight="18sp"
         android:paddingRight="10pt"
-        android:text="@string/tone_label"
+        android:text="@string/type_find_label"
         android:textAlignment="textStart"
         android:textColor="@color/blue_014BA0"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repeat_title" />
+        app:layout_constraintTop_toBottomOf="@+id/type_find_title" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -80,29 +80,29 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repeat_label">
+        app:layout_constraintTop_toBottomOf="@+id/type_find_label">
 
         <TextView
-            android:id="@+id/tone_search_label"
+            android:id="@+id/type_find_search_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/open_sans"
             android:lineHeight="18sp"
             android:paddingRight="10pt"
-            android:text="@string/tone_search_label"
+            android:text="@string/type_find_search_label"
             android:textAlignment="textStart"
             android:textColor="@color/blue_00276C"
             android:textSize="17sp" />
 
         <EditText
-            android:id="@+id/tone_search_label_value"
+            android:id="@+id/type_find_search_label_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/border_field"
             android:ems="10"
-            android:hint="@string/tone_search_label_placeholder"
+            android:hint="@string/type_find_search_label_placeholder"
             android:importantForAutofill="no"
             android:inputType="text"
             android:textAlignment="textStart"

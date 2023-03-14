@@ -16,17 +16,19 @@ public class PlaceMapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_place_map);
 
         buttonCancel = (Button) findViewById(R.id.place_map_cancel_button);
-        buttonCancel.setOnClickListener(view -> openActivityMenu());
+        buttonCancel.setOnClickListener(view -> finish());
+        //buttonCancel.setOnClickListener(view -> openActivityMenu());
 
         buttonNext = (Button) findViewById(R.id.place_map_next_button);
         buttonNext.setOnClickListener(view -> openActivityAddPlace());
     }
 
+    /**
     public void openActivityMenu() {
         Intent intent = new Intent(this, CategoryMenuActivity.class);
         intent.putExtra("category","place");
         startActivity(intent);
-    }
+    }**/
 
     public void openActivityAddPlace() {
         Intent intent = new Intent(this, PlaceAddActivity.class);

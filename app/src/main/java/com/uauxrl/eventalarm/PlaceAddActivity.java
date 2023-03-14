@@ -19,7 +19,8 @@ public class PlaceAddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_place_add);
 
         buttonCancel = (Button) findViewById(R.id.place_add_cancel_button);
-        buttonCancel.setOnClickListener(view -> openActivityMenu());
+        buttonCancel.setOnClickListener(view -> finish());
+        //buttonCancel.setOnClickListener(view -> openActivityMenu());
 
         buttonSave = (Button) findViewById(R.id.place_add_save_button);
         buttonSave.setOnClickListener(view -> openActivityMenu2("place_list"));
@@ -34,10 +35,12 @@ public class PlaceAddActivity extends AppCompatActivity {
         buttonTone.setOnClickListener(view -> openActivityTone());
     }
 
+    /**
     public void openActivityMenu() {
         Intent intent = new Intent(this, PlaceMapActivity.class);
         startActivity(intent);
     }
+     **/
 
     public void openActivityMenu2(String category) {
         Intent intent = new Intent(this, CategoryMenuActivity.class);

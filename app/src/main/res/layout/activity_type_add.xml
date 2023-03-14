@@ -61,7 +61,7 @@
         android:id="@+id/type_add_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/open_sans"
         android:text="@string/type_add_title"
         android:textColor="@color/blue_00003D"
@@ -69,7 +69,327 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/type_add_cancel_button" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_add_title">
+
+        <TextView
+            android:id="@+id/type_add_category"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="5dp"
+            android:text="@string/type_add_category"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_category_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_field"
+            android:ems="10"
+            android:hint="@string/type_add_category_value"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/gray_C7C7CC"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/type_add_category_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text=">>"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/type_add_label"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="10pt"
+            android:text="@string/type_add_label"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_label_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_field"
+            android:ems="10"
+            android:hint="@string/type_add_label_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/gray_C7C7CC"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/type_add_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="10pt"
+            android:text="@string/type_add_from"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_from_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_menu_item"
+            android:hint="@string/type_add_from_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColorHint="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/type_add_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="10pt"
+            android:text="@string/type_add_to"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_to_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_menu_item"
+            android:hint="@string/type_add_to_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColorHint="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/select_time" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/type_add_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="10pt"
+            android:text="@string/type_add_dist"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_dist_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_field"
+            android:ems="10"
+            android:hint="@string/type_add_dist_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/gray_C7C7CC"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/type_add_loop"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="5dp"
+            android:text="@string/type_add_loop"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_loop_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_field"
+            android:ems="10"
+            android:hint="@string/type_add_loop_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/gray_C7C7CC"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/type_add_loop_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text=">>"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/type_add_tone"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:lineHeight="18sp"
+            android:paddingRight="10dp"
+            android:text="@string/type_add_tone"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_00276C"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/type_add_tone_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_field"
+            android:ems="10"
+            android:hint="@string/clock_add_tone_typeholder"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/gray_C7C7CC"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/type_add_tone_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text=">>"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
