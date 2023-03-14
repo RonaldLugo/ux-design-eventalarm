@@ -20,10 +20,9 @@ public class TypeAddActivity extends AppCompatActivity {
 
         buttonCancel = (Button) findViewById(R.id.type_add_cancel_button);
         buttonCancel.setOnClickListener(view -> finish());
-        //buttonCancel.setOnClickListener(view -> openActivityMenu());
 
         buttonSave = (Button) findViewById(R.id.type_add_save_button);
-        buttonSave.setOnClickListener(view -> openActivityMenu2("type_list"));
+        buttonSave.setOnClickListener(view -> openActivityMenu("type_list"));
 
         buttonCategory = (Button) findViewById(R.id.type_add_category_open);
         buttonCategory.setOnClickListener(view -> openActivityCategory());
@@ -34,14 +33,8 @@ public class TypeAddActivity extends AppCompatActivity {
         buttonTone = (Button) findViewById(R.id.type_add_tone_open);
         buttonTone.setOnClickListener(view -> openActivityTone());
     }
-/**
-    public void openActivityMenu() {
-        Intent intent = new Intent(this, CategoryMenuActivity.class);
-        intent.putExtra("category","type");
-        startActivity(intent);
-    }**/
 
-    public void openActivityMenu2(String category) {
+    public void openActivityMenu(String category) {
         Intent intent = new Intent(this, CategoryMenuActivity.class);
         intent.putExtra("category",category);
         startActivity(intent);

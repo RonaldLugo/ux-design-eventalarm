@@ -20,10 +20,9 @@ public class PlaceAddActivity extends AppCompatActivity {
 
         buttonCancel = (Button) findViewById(R.id.place_add_cancel_button);
         buttonCancel.setOnClickListener(view -> finish());
-        //buttonCancel.setOnClickListener(view -> openActivityMenu());
 
         buttonSave = (Button) findViewById(R.id.place_add_save_button);
-        buttonSave.setOnClickListener(view -> openActivityMenu2("place_list"));
+        buttonSave.setOnClickListener(view -> openActivityMenu("place_list"));
 
         buttonMap = (Button) findViewById(R.id.place_add_map_open);
         buttonMap.setOnClickListener(view -> openActivityMap());
@@ -35,14 +34,7 @@ public class PlaceAddActivity extends AppCompatActivity {
         buttonTone.setOnClickListener(view -> openActivityTone());
     }
 
-    /**
-    public void openActivityMenu() {
-        Intent intent = new Intent(this, PlaceMapActivity.class);
-        startActivity(intent);
-    }
-     **/
-
-    public void openActivityMenu2(String category) {
+    public void openActivityMenu(String category) {
         Intent intent = new Intent(this, CategoryMenuActivity.class);
         intent.putExtra("category",category);
         startActivity(intent);
