@@ -87,4 +87,23 @@ Podrás personalizar aspectos como:</string>
     <string name="place_map_title">Lugar</string>
     <string name="place_map_label">Selecciona un lugar</string>
     <string name="place_map_desc">Selecciona el lugar que deseas referenciar, manteniendo presionada su ubicación en el mapa, luego selecciona el botón siguiente</string>
+    <string name="place_add_map">Lugar: </string>
+    <string name="place_add_map_placeholder">Impresiones y cia</string>
+    <string name="place_add_label">Etiqueta: </string>
+    <string name="place_add_label_placeholder">nombre de alarma</string>
+    <string name="place_add_from">Recordar desde: </string>
+    <string name="place_add_from_placeholder">16:52</string>
+    <string name="place_add_to">Recordar hasta: </string>
+    <string name="place_add_to_placeholder">00:00</string>
+    <string name="place_add_dist">Distancia de proximidad (mts)</string>
+    <string name="place_add_dist_placeholder">Distancia en metros</string>
+    <string name="place_add_loop">Periodicidad</string>
+    <string name="place_add_loop_placeholder">seleccione</string>
+    <string name="place_add_tone">Tono: </string>
+    <string name="place_add_tone_placeholder">seleccione un valor</string>
+    <string name="fragment_place_list_title">Lugar</string>
+    <string name="fr_place_list_desc">Usa esta opción cuando conozcas el lugar donde deseas que se active tu alarma</string>
+    <string name="place_list_item_text">Reclamar fotos</string>
+    <string name="place_list_item_desc">Impresiones y cia, Fin de semana</string>
+
 </resources>

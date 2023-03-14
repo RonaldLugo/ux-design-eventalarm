@@ -8,6 +8,10 @@ import android.widget.Button;
 public class PlaceAddActivity extends AppCompatActivity {
 
     private Button buttonCancel;
+    private Button buttonSave;
+    private Button buttonMap;
+    private Button buttonRepeat;
+    private Button buttonTone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +20,43 @@ public class PlaceAddActivity extends AppCompatActivity {
 
         buttonCancel = (Button) findViewById(R.id.place_add_cancel_button);
         buttonCancel.setOnClickListener(view -> openActivityMenu());
+
+        buttonSave = (Button) findViewById(R.id.place_add_save_button);
+        buttonSave.setOnClickListener(view -> openActivityMenu2("place_list"));
+
+        buttonMap = (Button) findViewById(R.id.place_add_map_open);
+        buttonMap.setOnClickListener(view -> openActivityMap());
+
+        buttonRepeat = (Button) findViewById(R.id.place_add_loop_open);
+        buttonRepeat.setOnClickListener(view -> openActivityRepeat());
+
+        buttonTone = (Button) findViewById(R.id.place_add_tone_open);
+        buttonTone.setOnClickListener(view -> openActivityTone());
     }
 
     public void openActivityMenu() {
         Intent intent = new Intent(this, PlaceMapActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivityMenu2(String category) {
+        Intent intent = new Intent(this, CategoryMenuActivity.class);
+        intent.putExtra("category",category);
+        startActivity(intent);
+    }
+
+    public void openActivityMap() {
+        Intent intent = new Intent(this, PlaceMapActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivityRepeat() {
+        Intent intent = new Intent(this, RepeatActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivityTone() {
+        Intent intent = new Intent(this, ToneActivity.class);
         startActivity(intent);
     }
 }
