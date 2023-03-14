@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
-        android:paddingHorizontal="30dp"
         android:text="@string/cancel"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -47,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_active"
-        android:paddingHorizontal="30dp"
         android:text="@string/save"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -188,15 +186,16 @@
             android:id="@+id/type_add_from_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@drawable/background_menu_item"
-            android:hint="@string/type_add_from_typeholder"
-            android:importantForAutofill="no"
-            android:inputType="text"
+            android:ems="10"
+            android:inputType="time"
+            android:text="12:30"
             android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColorHint="@color/white"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clock_add_title" />
     </LinearLayout>
 
     <LinearLayout
@@ -226,28 +225,17 @@
             android:id="@+id/type_add_to_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@drawable/background_menu_item"
-            android:hint="@string/type_add_to_typeholder"
-            android:importantForAutofill="no"
-            android:inputType="text"
+            android:ems="10"
+            android:inputType="time"
+            android:text="17:00"
             android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColorHint="@color/white"
-            android:textSize="17sp" />
-
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clock_add_title" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/select_time" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -257,7 +245,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <TextView
             android:id="@+id/type_add_dist"

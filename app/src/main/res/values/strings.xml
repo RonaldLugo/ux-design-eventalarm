@@ -40,17 +40,17 @@
     <string name="fragment_clock_inst">Configura tu primera alarma haciendo clic en la opción </string>
     <string name="fragment_place_title">Lugar</string>
     <string name="fragment_place_desc">Usa esta opción cuando necesites recordar algo justo en el momento que te encuentres cerca a un lugar específico.Podrás personalizar aspectos como:</string>
-    <string name="fragment_place_detail_fromto">Desde / Hasta</string>
+    <string name="fragment_place_detail_fromto">Desde / Hasta: </string>
     <string name="fragment_place_detail_fromto_desc">Indica en qué horario deseas que la alarma esté activa</string>
-    <string name="fragment_place_detail_dist">Distancia de proximidad</string>
+    <string name="fragment_place_detail_dist">Distancia de proximidad: </string>
     <string name="fragment_place_detail_dist_desc">Indica a cuantos metros de distancia del lugar específico, debe activarse tu alarma</string>
     <string name="fragment_place_inst">Configura tu primera alarma haciendo clic en la opción </string>
     <string name="fragment_type_title">Tipo de lugar</string>
     <string name="fragment_type_desc">Usa esta opción cuando necesites recordar algo al estar cerca de un tipo de lugar sin que necesites alguno en específico, por ejemplo: una droguería.
 Podrás personalizar aspectos como:</string>
-    <string name="fragment_type_detail_fromto">Desde / Hasta</string>
+    <string name="fragment_type_detail_fromto">Desde / Hasta: </string>
     <string name="fragment_type_detail_fromto_desc">Indica en qué horario deseas que la alarma esté activa</string>
-    <string name="fragment_type_detail_dist">Distancia de proximidad</string>
+    <string name="fragment_type_detail_dist">Distancia de proximidad: </string>
     <string name="fragment_type_detail_dist_desc">Indica a cuantos metros de distancia de un lugar que sea del tipo que necesitas, debe activarse tu alarma</string>
     <string name="fragment_type_inst">Configura tu primera alarma haciendo clic en la opción </string>
     <string name="clock_add_title">Hora</string>

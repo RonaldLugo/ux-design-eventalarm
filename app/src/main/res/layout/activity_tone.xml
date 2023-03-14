@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
-        android:paddingHorizontal="30dp"
         android:text="@string/back"
         android:textAlignment="center"
         android:textAllCaps="false"

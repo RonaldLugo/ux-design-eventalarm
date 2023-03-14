@@ -1,5 +1,7 @@
 package com.uauxrl.eventalarm;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -70,6 +72,32 @@ public class TypeListFragment extends Fragment {
             {
                 Intent intent = new Intent(getActivity(), TypeAddActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        ImageButton buttonRemove = (ImageButton) view.findViewById(R.id.fr_type_item_rm);
+        buttonRemove.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                new AlertDialog.Builder(getContext())
+                        .setTitle("Eliminar alarma de tipo de lugar")
+                        .setMessage("Estás segur@ que deseas eliminar esta alarma?")
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = new Intent(getActivity(), CategoryMenuActivity.class);
+                                intent.putExtra("category","type");
+                                startActivity(intent);
+                            }
+                        })
+                        .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // nothing
+                            }
+                        })
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
             }
         });
 

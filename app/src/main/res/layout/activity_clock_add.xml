@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
-        android:paddingHorizontal="30dp"
         android:text="@string/cancel"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -47,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_active"
-        android:paddingHorizontal="30dp"
         android:text="@string/save"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -71,15 +69,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BackgroundMenuClock" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <EditText
+        android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_menu_item"
+        android:ems="10"
+        android:inputType="time"
+        android:text="05:30"
+        android:textAlignment="center"
+        android:textColor="@color/gray_F2F2F7"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clock_add_title"
-        app:srcCompat="@drawable/select_time" />
+        app:layout_constraintTop_toBottomOf="@+id/clock_add_title" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -89,7 +93,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime">
 
         <TextView
             android:id="@+id/clock_add_label"
@@ -259,5 +263,7 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>

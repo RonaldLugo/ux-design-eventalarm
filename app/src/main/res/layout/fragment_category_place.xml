@@ -24,7 +24,6 @@
             android:id="@+id/fr_place_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:fontFamily="@font/open_sans"
             android:text="@string/fragment_place_title"
             android:textColor="@color/blue_00003D"
@@ -38,7 +37,7 @@
             android:id="@+id/fr_place_desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/open_sans"
             android:paddingStart="15pt"
             android:paddingEnd="15pt"
@@ -62,14 +61,15 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/fr_place_detail_fromto"
                     android:layout_width="43dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:padding="10pt"
+                    android:padding="5pt"
                     android:text="@string/fragment_place_detail_fromto"
                     android:textColor="@color/blue_00276C"
                     android:textSize="15sp" />
@@ -80,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/open_sans"
-                    android:padding="10pt"
+                    android:padding="5pt"
                     android:text="@string/fragment_place_detail_fromto_desc"
                     android:textColor="@color/blue_00276C"
                     android:textSize="15sp" />
@@ -88,14 +88,15 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/fr_place_detail_dist"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:padding="10pt"
+                    android:padding="5pt"
                     android:text="@string/fragment_place_detail_dist"
                     android:textColor="@color/blue_00276C"
                     android:textSize="15sp" />
@@ -106,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/open_sans"
-                    android:padding="10pt"
+                    android:padding="5pt"
                     android:text="@string/fragment_place_detail_dist_desc"
                     android:textColor="@color/blue_00276C"
                     android:textSize="15sp" />
@@ -118,11 +119,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="9dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/border_home_content"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fr_place_detail">
