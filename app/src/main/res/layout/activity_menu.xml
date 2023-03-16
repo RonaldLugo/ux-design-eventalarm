@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_master"
+    android:paddingStart="5pt"
+    android:paddingEnd="5pt"
     tools:context=".CategoryMenuActivity">
 
     <ImageView
@@ -73,6 +75,7 @@
                 android:fontFamily="@font/open_sans"
                 android:text="@string/menu_clock"
                 android:textAlignment="center"
+                android:textColor="@color/blue_00003D"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -101,6 +104,7 @@
                 android:fontFamily="@font/open_sans"
                 android:text="@string/menu_place"
                 android:textAlignment="center"
+                android:textColor="@color/blue_00003D"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -129,6 +133,7 @@
                 android:fontFamily="@font/open_sans"
                 android:text="@string/menu_type"
                 android:textAlignment="center"
+                android:textColor="@color/blue_00003D"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="form_field_labels" >14sp</dimen>
+    <dimen name="form_field_input">12sp</dimen>
+    <dimen name="form_field_open">20sp</dimen>
+</resources>

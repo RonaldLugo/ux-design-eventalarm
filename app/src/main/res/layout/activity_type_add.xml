@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_master"
     android:paddingStart="5pt"
     android:paddingEnd="5pt"
     tools:context=".TypeAddActivity">
@@ -29,6 +29,7 @@
         android:id="@+id/type_add_cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
         android:text="@string/cancel"
@@ -45,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/button_active"
         android:text="@string/save"
         android:textAlignment="center"
@@ -60,9 +62,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:fontFamily="@font/open_sans"
+        android:fontFamily="@font/orbitron_medium"
         android:text="@string/type_add_title"
-        android:textColor="@color/blue_00003D"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +76,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,8 +92,9 @@
             android:paddingRight="5dp"
             android:text="@string/type_add_category"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/type_add_category_value"
@@ -104,8 +108,8 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textColorHint="@color/gray_8E8E93"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
@@ -115,15 +119,16 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:text=">>"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="@dimen/form_field_open"
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,14 +144,16 @@
             android:paddingRight="10pt"
             android:text="@string/type_add_label"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/type_add_label_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/border_field"
             android:ems="10"
             android:hint="@string/type_add_label_typeholder"
@@ -155,7 +162,7 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -164,6 +171,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
+        android:paddingRight="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,8 +188,9 @@
             android:paddingRight="10pt"
             android:text="@string/type_add_from"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/type_add_from_value"
@@ -203,6 +213,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
+        android:paddingRight="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -218,8 +230,9 @@
             android:paddingRight="10pt"
             android:text="@string/type_add_to"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/type_add_to_value"
@@ -242,6 +255,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -257,14 +271,15 @@
             android:paddingRight="10pt"
             android:text="@string/type_add_dist"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels" />
 
         <EditText
             android:id="@+id/type_add_dist_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/border_field"
             android:ems="10"
             android:hint="@string/type_add_dist_typeholder"
@@ -272,8 +287,8 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textColorHint="@color/gray_8E8E93"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -282,6 +297,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -297,8 +313,8 @@
             android:paddingRight="5dp"
             android:text="@string/type_add_loop"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels" />
 
         <EditText
             android:id="@+id/type_add_loop_value"
@@ -312,8 +328,8 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textColorHint="@color/gray_8E8E93"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
@@ -323,9 +339,9 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:text=">>"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="@dimen/form_field_open"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -333,6 +349,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -348,8 +365,8 @@
             android:paddingRight="10dp"
             android:text="@string/type_add_tone"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels" />
 
         <EditText
             android:id="@+id/type_add_tone_value"
@@ -363,8 +380,8 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textColorHint="@color/gray_8E8E93"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
@@ -374,8 +391,8 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:text=">>"
-            android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="@dimen/form_field_open"
             android:textStyle="bold" />
 
     </LinearLayout>

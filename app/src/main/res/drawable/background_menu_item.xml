@@ -8,6 +8,9 @@
         android:right="5dp"
         android:bottom="10dp"
         android:top="10dp"/>
-    <solid android:color="@color/blue_5B7DCF" />
+    <!--<solid android:color="@color/green_30D158" />-->
+    <gradient
+        android:startColor="@color/green_30D158"
+        android:endColor="@android:color/holo_green_light"/>
 
 </shape>

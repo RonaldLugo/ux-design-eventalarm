@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_master"
     android:paddingStart="5pt"
     android:paddingEnd="5pt"
     tools:context=".RepeatActivity">
@@ -29,6 +29,7 @@
         android:id="@+id/repeat_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
         android:text="@string/back"
@@ -45,9 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/open_sans"
+        android:fontFamily="@font/orbitron_medium"
         android:text="@string/repeat_title"
-        android:textColor="@color/blue_00003D"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +66,7 @@
         android:paddingRight="10pt"
         android:text="@string/repeat_label"
         android:textAlignment="textStart"
-        android:textColor="@color/blue_014BA0"
+        android:textColor="@color/gray_F2F2F7"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,10 +94,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_sunday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/gray_636366" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_monday"
@@ -108,10 +109,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_monday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/green_30D158" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_tuesday"
@@ -123,10 +124,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_tuesday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/green_30D158" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_wednesday"
@@ -138,10 +139,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_wednesday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/green_30D158" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_thursday"
@@ -153,10 +154,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_thursday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/green_30D158" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_friday"
@@ -168,10 +169,10 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_friday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/green_30D158" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
 
         <Switch
             android:id="@+id/repeat_sw_saturday"
@@ -182,9 +183,9 @@
             android:lineHeight="18sp"
             android:text="@string/repeat_week_saturday"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp"
-            android:thumbTint="@color/gray_F2F2F7"
-            android:trackTint="@color/gray_636366" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

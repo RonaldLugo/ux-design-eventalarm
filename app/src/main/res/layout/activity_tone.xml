@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_master"
     android:paddingStart="5pt"
     android:paddingEnd="5pt"
     tools:context=".ToneActivity">
@@ -29,6 +29,7 @@
         android:id="@+id/repeat_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button_inactive"
         android:text="@string/back"
@@ -45,9 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/open_sans"
+        android:fontFamily="@font/orbitron_medium"
         android:text="@string/tone_title"
-        android:textColor="@color/blue_00003D"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +66,7 @@
         android:paddingRight="10pt"
         android:text="@string/tone_label"
         android:textAlignment="textStart"
-        android:textColor="@color/blue_014BA0"
+        android:textColor="@color/gray_F2F2F7"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:paddingLeft="10pt"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,14 +93,16 @@
             android:paddingRight="10pt"
             android:text="@string/tone_search_label"
             android:textAlignment="textStart"
-            android:textColor="@color/blue_00276C"
-            android:textSize="17sp" />
+            android:textColor="@color/gray_F2F2F7"
+            android:textSize="@dimen/form_field_labels"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/tone_search_label_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/border_field"
             android:ems="10"
             android:hint="@string/tone_search_label_placeholder"
@@ -106,8 +110,8 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColorHint="@color/gray_C7C7CC"
-            android:textSize="17sp"
+            android:textColorHint="@color/gray_8E8E93"
+            android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
