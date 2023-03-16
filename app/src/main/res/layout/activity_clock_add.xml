@@ -126,6 +126,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
@@ -168,6 +169,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="12sp"
             tools:ignore="TouchTargetSizeCheck" />
@@ -262,6 +264,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="12sp"
             tools:ignore="TouchTargetSizeCheck" />

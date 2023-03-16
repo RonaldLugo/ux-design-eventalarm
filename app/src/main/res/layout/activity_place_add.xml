@@ -108,6 +108,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
@@ -153,8 +154,8 @@
             android:id="@+id/place_add_label_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="20dp"
+            android:layout_weight="1"
             android:background="@drawable/border_field"
             android:ems="10"
             android:hint="@string/place_add_label_placeholder"
@@ -162,6 +163,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
@@ -291,6 +293,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
@@ -333,6 +336,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
@@ -386,6 +390,7 @@
             android:inputType="text"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:textColor="@color/blue_00003D"
             android:textColorHint="@color/gray_8E8E93"
             android:textSize="@dimen/form_field_input"
             tools:ignore="TouchTargetSizeCheck" />
